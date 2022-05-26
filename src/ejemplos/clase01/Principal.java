@@ -1,5 +1,5 @@
 
-package proyectos22033.clase01;
+package ejemplos.clase01;
 
 import java.util.Scanner;
 
