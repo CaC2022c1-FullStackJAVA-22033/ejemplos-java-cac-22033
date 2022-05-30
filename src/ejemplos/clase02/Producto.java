@@ -57,8 +57,12 @@ public class Producto {
         return rating;
     }
 
+    public double getPrecio() {
+        return precio;
+    }
+
     public void setRating(int rating) {
-        if(rating > 0 && rating < 5) {
+        if(rating > 0 && rating <= 5) {
            this.rating = rating;
         }
     }    
@@ -72,6 +76,10 @@ public class Producto {
         return "Producto{" + "id=" + id + ", nombre=" + nombre + 
                 ", rating=" + rating + ", precio=" + precio + 
                 ", rutaFoto=" + rutaFoto + "}";
+    }
+
+    public void aumentarPrecio(double porc) {
+        setPrecio( getPrecio() * (1 + (porc / 100)) );
     }
     
     
