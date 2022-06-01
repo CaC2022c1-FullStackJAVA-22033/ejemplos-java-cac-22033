@@ -20,6 +20,7 @@ public class Principal {
         System.out.println("Todos los productos");
         t.verProductos();
         
+        
 //        System.out.println("Productos con rating >=3");
 //        t.verProductosConRatingMayorA(3);
         
